@@ -14,7 +14,7 @@ services:
     volumes:
       - ".:/app"
     environment:
-      PYTHONUNBUFFERED: 0
+      PYTHONUNBUFFERED: "0"
       REDASH_LOG_LEVEL: "INFO"
       REDASH_REDIS_URL: "redis://redis:6379/0"
       REDASH_DATABASE_URL: "postgresql://postgres@postgres/postgres"
@@ -44,7 +44,7 @@ services:
     depends_on:
       - server
     environment:
-      PYTHONUNBUFFERED: 0
+      PYTHONUNBUFFERED: "0"
       REDASH_LOG_LEVEL: "INFO"
       REDASH_REDIS_URL: "redis://redis:6379/0"
       REDASH_DATABASE_URL: "postgresql://postgres@postgres/postgres"
